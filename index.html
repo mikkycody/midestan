@@ -53,22 +53,22 @@
                     <div class="col-md-9 col-4">
                         <ul id="menu_items" class="menu_items">
                             <li class="nav-item">
-                                <a href="index.html" class="active menu_item nav-link slide-horizontal" data-splitting>Home</a>
+                                <a href="index.html" onclick="homePage()" class="active menu_item nav-link slide-horizontal" data-splitting>Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html" class=" menu_item nav-link slide-horizontal" data-splitting>About</a>
+                                <a href="about.html" onclick="aboutUs()" class=" menu_item nav-link slide-horizontal" data-splitting>About</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a href="#service" class="menu_item nav-link slide-horizontal" data-splitting>Service</a>
                             </li> -->
                             <li class="nav-item">
-                                <a href="works.html" class="menu_item nav-link slide-horizontal" data-splitting>Portfolio</a>
+                                <a href="works.html" onclick="worksPage()" class="menu_item nav-link slide-horizontal" data-splitting>Portfolio</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a href="#testimonial" class="menu_item nav-link slide-horizontal" data-splitting>Testimonial</a>
                             </li> -->
                             <li class="nav-item">
-                                <a href="contact.html" class="menu_item nav-link slide-horizontal" data-splitting>Contact</a>
+                                <a href="contact.html" onclick="contactPage()" class="menu_item nav-link slide-horizontal" data-splitting>Contact</a>
                             </li>
                         </ul>
                         <!-- responsive menu btn -->
@@ -376,6 +376,22 @@
     <script src="js/ajax-mail.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- put this script at the end of each page. add more functions if you like but don't forget to place the calls in the a tags -->
+    <script>
+        function homePage(){
+            window.location.href = "index.html";
+        }
+        function aboutPage(){
+            window.location.href = "about.html";
+        }
+        function worksPage(){
+            window.location.href = "works.html";
+        }
+        function contactPage(){
+            window.location.href = "contact.html";
+        }
+    </script>
 </body>
 
 
