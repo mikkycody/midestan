@@ -15,7 +15,7 @@
     <!-- Title -->
     <title>Midestan - Creative Personnel</title>
     <!-- Favicon -->
-    <link href="img/favicon.png" type="image/png" rel="icon">
+    <link href="https://res.cloudinary.com/midestan-com/image/upload/v1622475880/Website/Midestan%20Website/ALY/Favicon_hvb05y.png" type="image/png" rel="icon">
 
     <!-- All CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -26,67 +26,76 @@
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .work-outline{
+            border: 1px solid rgb(53, 53, 53);
+        }
+    </style>
 </head>
 
 <body id="top" data-spy="scroll" data-target="#menu_items">
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-     <!--  start page loader  -->
-     <div id="preloader">
+    <!--  start page loader  -->
+    <!-- <div id="preloader">
         <div class="scroll-static"></div>
-    </div>
+    </div> -->
     <!--  end page loader  -->
 
-    
-     <!-- start header  -->
-     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-8">
-                    <div class="logo">
-                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+    <!-- start landing wrapper  -->
+    <div >
+        <!-- start header  -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-8">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-9 col-4">
-                    <ul id="menu_items" class="menu_items">
-                        <li class="nav-item">
-                            <a href="index.html" class=" menu_item nav-link slide-horizontal" data-splitting>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="about.html" class="menu_item nav-link slide-horizontal" data-splitting>About</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="#service" class="menu_item nav-link slide-horizontal" data-splitting>Service</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a href="works.html" class="active menu_item nav-link slide-horizontal" data-splitting>Portfolio</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="#testimonial" class="menu_item nav-link slide-horizontal" data-splitting>Testimonial</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a href="contact.html" class="menu_item nav-link slide-horizontal" data-splitting>Contact</a>
-                        </li>
-                    </ul>
-                    <!-- responsive menu btn -->
-                    <div class="nav-btn">
-                        <span class="ion-android-menu"></span>
+                    <div class="col-md-9 col-4">
+                        <ul id="menu_items" class="menu_items">
+                            <li class="nav-item">
+                                <a href="index.html" onclick="homePage()" class=" menu_item nav-link slide-horizontal" data-splitting>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" onclick="aboutPage()" class=" menu_item nav-link slide-horizontal" data-splitting>About</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#service" class="menu_item nav-link slide-horizontal" data-splitting>Service</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="works.html" onclick="worksPage()" class="active menu_item nav-link slide-horizontal" data-splitting>Portfolio</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#testimonial" class="menu_item nav-link slide-horizontal" data-splitting>Testimonial</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="contact.html" onclick="contactPage()" class="menu_item nav-link slide-horizontal" data-splitting>Contact</a>
+                            </li>
+                        </ul>
+                        <!-- responsive menu btn -->
+                        <div class="nav-btn">
+                            <span class="ion-android-menu"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- end header  -->
+        </header>
     <!-- start work wrapper -->
     <div id="works" class="work_wrapper">
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <!-- section title -->
                 <div class="text-center">
-                    <h2 class="section_title">Recent Works</h2>
+                    <h2 class="section_title">Portfolio</h2>
                 </div>
                 
                 <!-- work filter start -->
-                <div class="row no-gutters">
+                <!-- <div class="row no-gutters">
                     <div class="col-12">
                         <div class="filter-buttons">
                             <button class="active" data-filter="*">All</button>
@@ -95,80 +104,81 @@
                             <button data-filter=".branding">Branding</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- work filter end -->
                 
                 <div class="row works">
                     <!-- work single item  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 uiux">
+                    <div class="col-lg-4 work-outline col-md-6 col-sm-6 uiux">
                         <div class="work_single_item">
-                            <img class="img-fluid" src="img/work_01.jpg" alt="">
+                            <a href="aly.html">
+                                <img class="img-fluid" src="https://res.cloudinary.com/midestan-com/image/upload/v1622467199/Website/Midestan%20Website/ALY/images/ALY_01-_1_ebd4e7.png" alt="">
+                            </a>
                             <div class="work_info">
-                                <h6 title="Black &amp; White Shoe">Black &amp; White Shoe</h6>
+                                <h6 title="">ALY Beauty Studio</h6>
                                 <p>Upcoming</p>
-                                <a class="ajax-popup-link" href="work-details-1.html"><span class="ion-android-expand"></span></a>
+                                <a  href="aly.html"><span class="ion-eye"></span></a>
                             </div>
                         </div>
                     </div>
                     <!-- work single item  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 web">
+                    <div class="col-lg-4 work-outline col-md-6 col-sm-6 web">
                         <div class="work_single_item">
-                            <img class="img-fluid" src="img/work_02.jpg" alt="">
+                            <a href="haece.html">
+
+                            <img class="img-fluid" src="https://res.cloudinary.com/midestan-com/image/upload/v1622467258/Website/Midestan%20Website/Haece/images/Haece_mopclg.png" alt="">
+                            </a>
                             <div class="work_info">
-                                <h6 title="White Lamp in White Wall">White Lamp in White Wall</h6>
+                                <h6 title="White Lamp in White Wall">Haece Properties</h6>
                                 <p>05 Aug 2018</p>
-                                <a class="ajax-popup-link" href="work-details-2.html"><span class="ion-android-expand"></span></a>
+                                <a  href="haece.html"><span class="ion-eye"></span></a>
                             </div>
                         </div>
                     </div>
                     <!-- work single item  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 branding">
+                    <div class="col-lg-4 work-outline col-md-6 col-sm-6 branding">
                         <div class="work_single_item">
-                            <img class="img-fluid" src="img/work_03.gif" alt="">
+                            <a href="capiteum.html">
+                                <img class="img-fluid" src="https://res.cloudinary.com/midestan-com/image/upload/v1622468071/Website/Midestan%20Website/Capiteum/images/Capiteum_dyajld.png
+                                " alt="">
+                            </a>
                             <div class="work_info">
-                                <h6 title="Green Lamp Holder">LED Torch Light</h6>
+                                <h6 title="Green Lamp Holder">Capiteum Asset Management</h6>
                                 <p>21 July 2018</p>
-                                <a class="ajax-popup-link" href="work-details-3.html"><span class="ion-android-expand"></span></a>
+                                <a  href="capiteum.html"><span class="ion-eye"></span></a>
                             </div>
                         </div>
                     </div>
                     <!-- work single item  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 web">
+                    <div class="col-lg-4 work-outline col-md-6 col-sm-6 web">
                         <div class="work_single_item">
-                            <img class="img-fluid" src="img/work_04.jpg" alt="">
+                            <a href="cn.html">
+
+                                <img class="img-fluid" src="https://res.cloudinary.com/midestan-com/image/upload/v1622469050/Website/Midestan%20Website/CN%20/images/CN-_vkbrqp.png 
+                                " alt="">
+                            </a>
+
                             <div class="work_info">
-                                <h6 title="Green Lamp Holder">Green Lamp Holder</h6>
+                                <h6 title="Green Lamp Holder">Colliseum Network</h6>
                                 <p>16 June 2018</p>
-                                <a class="ajax-popup-link" href="work-details-4.html"><span class="ion-android-expand"></span></a>
+                                <a  href="cn.html"><span class="ion-eye"></span></a>
                             </div>
                         </div>
                     </div>
                     <!-- work single item  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 branding">
+                    <div class="col-lg-4 work-outline col-md-6 col-sm-6 branding">
                         <div class="work_single_item">
-                            <img class="img-fluid" src="img/work_05.gif" alt="">
+                            <img class="img-fluid" src="https://res.cloudinary.com/midestan-com/image/upload/v1622468453/Website/Midestan%20Website/JW/images/jw_agz4lt.png
+                            " alt="">
                             <div class="work_info">
-                                <h6 title="Olive Oil Bottle">Stainless Steel Chair</h6>
+                                <h6 title="Olive Oil Bottle">JW</h6>
                                 <p>19 April 2018</p>
-                                <a class="ajax-popup-link" href="work-details-5.html"><span class="ion-android-expand"></span></a>
+                                <a  href="jw.html"><span class="ion-eye"></span></a>
                             </div>
                         </div>
                     </div>
-                    <!-- work single item  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 uiux">
-                        <div class="work_single_item">
-                            <img class="img-fluid" src="img/work_06.jpg" alt="">
-                            <div class="work_info">
-                                <h6 title="Black Chair">Black Chair</h6>
-                                <p>27 Feb 2018</p>
-                                <a class="ajax-popup-link" href="work-details-6.html"><span class="ion-android-expand"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- view all work button  -->
-                    <div class="col-lg-12">
-                        <a class="button slide-vertical" data-splitting href="all-works.html">View All Works</a>
-                    </div>
+                   
+                   
                 </div>
             </div>
         </div>
@@ -197,4 +207,20 @@
     <script src="js/ajax-mail.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+        <!-- put this script at the end of each page. add more functions if you like but don't forget to place the calls in the a tags -->
+        <script>
+            function homePage(){
+                window.location.href = "index.html";
+            }
+            function aboutPage(){
+                window.location.href = "about.html";
+            }
+            function worksPage(){
+                window.location.href = "works.html";
+            }
+            function contactPage(){
+                window.location.href = "contact.html";
+            }
+        </script>
 </body>
